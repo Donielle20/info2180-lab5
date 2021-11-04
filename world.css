@@ -1,1 +1,83 @@
-/* Add your own styles */
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 1em;
+    background-color: rgb(75, 70, 70);
+    height: 200px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5em;
+}
+
+#controls{
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-row: 2;
+}
+
+input{
+    width: 500px;
+    position: relative;
+    left: 400px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#lookup{
+    width: 120px;
+    position: relative;
+    left: 520px;
+    top: 20px;
+    padding: 0.4em;
+    background-color: lightgreen;
+    top: 30;
+    border-radius: 5px;
+}
+
+#result{
+    position: relative;
+    top: 50px;
+}
+
+#lookup_cities{
+    width: 120px;
+    position: relative;
+    left: 650px;
+    top: -10px;
+    padding: 0.4em;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+table{
+    position: relative;
+    top: 10px;
+}

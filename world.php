@@ -4,6 +4,8 @@ $username = 'lab5_user';
 $password = 'password123';
 $dbname = 'world';
 
+$country = $_GET['country'];
+
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
 $stmt = $conn->query("SELECT * FROM countries WHERE name LIKE '%$country%'");
 $rtmt = $conn->query("SELECT cities.name, cities.district, cities.population FROM cities INNER JOIN countries ON cities.country_code=countries.code WHERE countries.name LIKE '%$country%'");
